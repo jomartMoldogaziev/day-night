@@ -1,0 +1,70 @@
+body{
+            background-color: rgb(255, 255, 255);
+            background-image: url(https://hdpic.club/uploads/posts/2021-11/thumbs/1636382072_44-hdpic-club-p-bmv-speredi-62.jpg);
+             background-repeat: no-repeat;
+            background-size: cover;
+            
+         
+        }
+        .DarkBody{
+            background-color: rgb(0, 0, 0);
+            background-image: url(https://oboitut.com/uploads/posts/2019-09/thumbs/oboitut.com_1569435452.jpg);
+            background-repeat: no-repeat;
+            background-size: cover;
+        }
+ 
+     
+        .switch{
+            display: inline-block;
+            position: relative;
+            width: 6.5rem;
+            height: 3.2rem;
+        }
+        .switch input{
+            opacity: 1;
+            width: 0;
+            height: 0;
+        }
+        .move{
+            position: absolute;
+            top: 0;
+            right: 0;
+            bottom: 0;
+            left: 0;
+            background-color: aqua;
+            border-radius: 3rem;
+            transition: 0.3s;
+            cursor: pointer;
+        }
+        .move::before{
+            position: absolute;
+            content: '';
+            background:#fff;
+            width: 3rem;
+            height: 3rem;
+            border-radius: 1.5rem;
+            top: 0;
+            bottom: 0;
+            left: 0.12rem;
+            box-shadow: 0 .2rem .5rem #000;
+            transition: 0.3s;
+            z-index: 2;
+        }
+        input:checked+ .move{
+            background-color: blue;
+        }
+         input:checked+ .move::before{
+            transform: translateX(3.1rem);
+         }
+         .Sun{
+            position: absolute;
+            margin-left: 50px;
+            z-index: 1;
+            font-size: 1.5rem;
+
+         }
+         .moon{
+            position: absolute;
+            z-index: 1;
+            font-size: 1.5rem;
+         }
